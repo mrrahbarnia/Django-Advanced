@@ -11,3 +11,6 @@ services:
     # environment:
     #   - name=value
     container_name: backend
+    environment:
+      - SECRET_KEY=test
+      - DEBUG=True
