@@ -5,8 +5,7 @@ from blog.models import Post,Category
 class PostAdmin(admin.ModelAdmin):
     date_hierarchy = "published_date"
     empty_value_display = '-empty-'
-    fields = ('author','image','title','content','category','published_date')
-    list_display = ('author','title','content')
+    list_display = ('author','title','status','created_date','published_date')
 
 
 class CategoryAdmin(admin.ModelAdmin):
