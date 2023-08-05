@@ -8,7 +8,7 @@ from blog.models import Post
 from django.shortcuts import redirect
 from blog.forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin,PermissionRequiredMixin
-
+from accounts.models import Profile
 # Create your views here.
 
 # FBV for templateview
