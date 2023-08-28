@@ -1,14 +1,9 @@
-from typing import Any, Dict, Optional
-from django.db.models.query import QuerySet
-from django.forms.models import BaseModelForm
-from django.http import HttpResponse
-from django.shortcuts import render
 from django.views.generic import TemplateView,RedirectView,ListView,DetailView,FormView,CreateView,UpdateView,DeleteView
 from blog.models import Post
-from django.shortcuts import redirect
 from blog.forms import PostForm
 from django.contrib.auth.mixins import LoginRequiredMixin,PermissionRequiredMixin
 from accounts.models import Profile
+
 # Create your views here.
 
 # FBV for templateview
@@ -100,9 +95,6 @@ class UpdatePostView(LoginRequiredMixin,UpdateView):
 class DeletePostView(LoginRequiredMixin,DeleteView):
     model = Post
     success_url = "/blog/posts/"
-
-
-    
 
     
     
