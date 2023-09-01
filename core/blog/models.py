@@ -1,4 +1,6 @@
 from django.db import models
+from django.utils.text import Truncator
+
 # from django.contrib.auth import get_user_model
 
 # getting User model objects 
@@ -22,6 +24,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+    
+    def get_snippet(self):
+        return Truncator(self.content).words(3)
 
 class Category(models.Model):
     '''
