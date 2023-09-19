@@ -1,6 +1,17 @@
+# General modules
 Django==3.2.20
 python-decouple
 pillow
 djangorestframework
+
+# 3rd party modules
 markdown  
 django-filter
+drf-yasg[validation]
+djangorestframework-simplejwt
+djoser
+
+# 3rd party email modules
+django-mail-templated
+
+# Deployment modules
