@@ -15,3 +15,7 @@ djoser
 django-mail-templated
 
 # Deployment modules
+
+# Refactoring and tests
+black
+flake8
