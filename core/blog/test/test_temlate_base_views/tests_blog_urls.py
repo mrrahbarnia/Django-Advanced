@@ -3,7 +3,7 @@ from django.test import SimpleTestCase,TestCase
 # from rest_framework.test import APIClient
 # from accounts.models import User
 from django.urls import reverse, resolve
-from ..views import (
+from ...views import (
     PostListView, DetalViewPost ,DeletePostView
 )
 

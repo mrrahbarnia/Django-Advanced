@@ -3,7 +3,7 @@ from django.test import TestCase
 from datetime import datetime
 
 from accounts.models import User,Profile
-from ..models import Post,Category
+from ...models import Post,Category
 
 class TestModel(TestCase):
 

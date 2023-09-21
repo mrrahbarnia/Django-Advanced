@@ -1,8 +1,8 @@
-from django.test import (TestCase,Client)
+from django.test import TestCase,Client
 from django.urls import reverse
 
 from accounts.models import User,Profile
-from ..models import Category,Post
+from ...models import Category,Post
 
 from datetime import datetime
 
