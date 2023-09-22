@@ -12,3 +12,4 @@ exclude =
     __init__.py
     tests.py
     migrations
+    test
