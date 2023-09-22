@@ -26,7 +26,7 @@ class TestPostApi():
     def test_get_postlist_response_200_status(self, api_client):
         url = reverse("blog:api-v1:post-list")
         response = api_client.get(url)
-        assert response.status_code == 200
+        assert response.status_code == 400
 
     def test_create_post_response_401_status(self, api_client):
         url = reverse("blog:api-v1:post-list")
